@@ -4,7 +4,6 @@
       <p class="vux-uploader_title">{{ title }}</p>
       <div class="vux-uploader_info">{{ fileList.length }} / {{ limit }}</div>
     </div>
-    <div>test content</div>
     <div class="vux-uploader_bd">
       <ul class="vux-uploader_files">
         <li
