@@ -350,11 +350,12 @@ export default {
         position: relative;
         .delete_preview{
           position: absolute;
-          top: 5px;
-          right: 5px;
+          top: 0px;
+          right: 2px;
           font-size: 20px;
-          color: #000;
+          color: #f43530;
           text-decoration: none;
+          font-weight: bold;
         }
       }
       .vux-uploader_file-status {
