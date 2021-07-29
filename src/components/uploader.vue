@@ -4,7 +4,6 @@
       <p class="vux-uploader_title">{{ title }}</p>
       <div class="vux-uploader_info">{{ fileList.length }} / {{ limit }}</div>
     </div>
-    <div>asdadasd</div>
     <div class="vux-uploader_bd">
       <ul class="vux-uploader_files">
         <li
@@ -19,6 +18,7 @@
             }"
           @click="handleFileClick($event, item, index)"
         >
+          <a href="javascript:void(0)" class="delete_preview" @click="deleteImg(index)">X</a>
           <div
             v-if="!!item.fetchStatus && item.fetchStatus !== 'success'"
             class="vux-uploader_file-content"
@@ -347,6 +347,15 @@ export default {
         height: 79px;
         background: no-repeat center center;
         background-size: cover;
+        position: relative;
+        .delete_preview{
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          font-size: 20px;
+          color: #000;
+          text-decoration: none;
+        }
       }
       .vux-uploader_file-status {
         position: relative;
@@ -378,6 +387,7 @@ export default {
           }
         }
       }
+
     }
     .vux-uploader_input-box {
       float: left;
