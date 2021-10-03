@@ -9,6 +9,7 @@
         v-model="fileList"
         url="http://localhost:9090/upload"
         name="upload"
+        :autoUpload="false"
         :params="{
           token: '13579',
           linkid: '2323',
