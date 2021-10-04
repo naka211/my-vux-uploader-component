@@ -18,7 +18,7 @@
             }"
           @click="handleFileClick($event, item, index)"
         >
-          <a href="javascript:void(0)" class="delete_preview" @click="deleteImg(index)"><img src="/dist/trash.png"/></a>
+          <div class="delete_preview" @click="deleteImg(index)"></div>
           <div
             v-if="!!item.fetchStatus && item.fetchStatus !== 'success'"
             class="vux-uploader_file-content"
@@ -350,10 +350,16 @@ export default {
         position: relative;
         .delete_preview{
           position: absolute;
-          top: 5px;
+          top: 4px;
           right: 5px;
           text-decoration: none;
           font-weight: bold;
+          font-family: 'weui';
+          &:before {
+            color: #f43530;
+            font-size: 16px;
+            content: '\EA11';
+          }
         }
       }
       .vux-uploader_file-status {
