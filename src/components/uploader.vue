@@ -18,7 +18,7 @@
             }"
           @click="handleFileClick($event, item, index)"
         >
-          <div class="delete_preview" @click="deleteImg(index)"></div>
+          <a href="javascript:void(0)" class="delete_preview" @click="deleteImg(index)"></a>
           <div
             v-if="!!item.fetchStatus && item.fetchStatus !== 'success'"
             class="vux-uploader_file-content"
