@@ -17,6 +17,7 @@
     "server": "nodemon  server.js"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001561",
     "exif-js": "^2.3.0",
     "photoswipe": "^4.1.3"
   },
