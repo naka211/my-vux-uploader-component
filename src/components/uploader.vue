@@ -18,7 +18,7 @@
             }"
           @click="handleFileClick($event, item, index)"
         >
-          <a href="javascript:void(0)" class="delete_preview" @click="deleteImg(index)"></a>
+          <a href="javascript:void(0)" class="delete_preview" @click="deleteImg(index)">Slet</a>
           <div
             v-if="!!item.fetchStatus && item.fetchStatus !== 'success'"
             class="vux-uploader_file-content"
@@ -348,18 +348,35 @@ export default {
         background: no-repeat center center;
         background-size: cover;
         position: relative;
+        // .delete_preview{
+        //   position: absolute;
+        //   top: 4px;
+        //   right: 5px;
+        //   text-decoration: none;
+        //   font-weight: bold;
+        //   font-family: 'weui';
+        //   &:before {
+        //     color: #f43530;
+        //     font-size: 16px;
+        //     content: '\EA11';
+        //   }
+        // }
         .delete_preview{
           position: absolute;
           top: 4px;
           right: 5px;
+          font-size: 10px;
+          border-radius: 100px;
+          padding: 2px 7px;
+          background: #ababab;
+          background-size: 300% 100%;
+          -moz-transition: all .4s ease-in-out;
+          -o-transition: all .4s ease-in-out;
+          -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+          color: #fff;
           text-decoration: none;
           font-weight: bold;
-          font-family: 'weui';
-          &:before {
-            color: #f43530;
-            font-size: 16px;
-            content: '\EA11';
-          }
         }
       }
       .vux-uploader_file-status {
