@@ -343,8 +343,8 @@ export default {
         float: left;
         margin-left: 9px;
         margin-bottom: 9px;
-        width: 79px;
-        height: 79px;
+        width: 110px;
+        height: 110px;
         background: no-repeat center center;
         background-size: cover;
         position: relative;
@@ -363,11 +363,11 @@ export default {
         // }
         .delete_preview{
           position: absolute;
-          top: 4px;
-          right: 5px;
+          top: 0px;
+          right: 0px;
           font-size: 10px;
           border-radius: 100px;
-          padding: 3px 10px;
+          padding: 0px 15px;
           background: #ababab;
           background-size: 300% 100%;
           -moz-transition: all .4s ease-in-out;
